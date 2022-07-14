@@ -29,3 +29,8 @@ create table company (
 alter table person add column country varchar(2)
 -- rollback ALTER TABLE person DROP COLUMN country;
 
+-- changeset other.dev:4 labels:example-label context:example-context
+-- comment: example comment
+alter table company add column country varchar(2)
+-- rollback ALTER TABLE company DROP COLUMN country;
+
