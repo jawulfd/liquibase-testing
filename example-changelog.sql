@@ -33,18 +33,3 @@ alter table person add column country varchar(2)
 -- comment: example comment
 alter table company add column country varchar(2)
 -- rollback ALTER TABLE company DROP COLUMN country;
-
--- changeset other.dev:5 labels:example-label context:example-context
--- comment: example comment
-alter table person add column state varchar(50)
--- rollback ALTER TABLE person DROP COLUMN state;
-
--- changeset other.dev:6 labels:example-label context:example-context
--- comment: example comment
-alter table company add column state varchar(50)
--- rollback ALTER TABLE company DROP COLUMN state;
-
--- changeset other.dev:7 labels:example-label context:example-context
--- comment: example comment
-alter table company add column state varchar(50)
--- rollback ALTER TABLE company DROP COLUMN state;
