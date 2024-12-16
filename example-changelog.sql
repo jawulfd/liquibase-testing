@@ -53,3 +53,27 @@ alter table person add column address3 varchar(50)
 -- comment: example comment1
 alter table company add column address3 varchar(50)
 -- rollback ALTER TABLE company DROP COLUMN address3;
+
+-- changeset your.name:3 labels:example-label context:example-context
+-- comment: example comment
+create table company2 (
+    id int auto_increment not null,
+    name varchar(50) not null,
+    address1 varchar(50),
+    address2 varchar(50),
+    city varchar(30),
+    primary key (id)
+)
+-- rollback DROP TABLE company2;
+
+-- changeset your.name:4 labels:example-label context:example-context
+-- comment: example comment
+create table company3 (
+    id int auto_increment not null,
+    name varchar(50) not null,
+    address1 varchar(50),
+    address2 varchar(50),
+    city varchar(30),
+    primary key (id)
+)
+-- rollback DROP TABLE company3;
