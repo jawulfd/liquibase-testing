@@ -40,6 +40,6 @@ alter table person add column state varchar(50)
 -- rollback ALTER TABLE person DROP COLUMN state;
 
 -- changeset other.dev:6 labels:example-label context:example-context
--- comment: example comment
+-- comment: example comment1
 alter table company add column state varchar(50)
 -- rollback ALTER TABLE company DROP COLUMN state;
