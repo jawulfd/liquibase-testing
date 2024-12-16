@@ -45,11 +45,11 @@ alter table company add column state varchar(50)
 -- rollback ALTER TABLE company DROP COLUMN state;
 
 -- changeset other.dev:7 labels:example-label context:example-context
--- comment: example comment
+-- comment: example comment1
 alter table person add column address3 varchar(50)
 -- rollback ALTER TABLE person DROP COLUMN address3;
 
 -- changeset other.dev:8 labels:example-label context:example-context
--- comment: example comment
+-- comment: example comment1
 alter table company add column address3 varchar(50)
 -- rollback ALTER TABLE company DROP COLUMN address3;
